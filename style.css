@@ -23,12 +23,34 @@ body {
   align-items: center;
   font-size: 1.6rem;
   min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1617150119111-09bbb85178b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  animation-name: clouds;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clouds {
+  0% {
+    background-position-x: 0;
+  }
+
+  50% {
+    background-position-x: 100%;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
 }
 
 .bold {
   font-weight: bold;
 }
 .card {
+  background-color: #eefcfa;
+  padding: 3rem;
+  box-shadow: 0 0 4px var(--color-primary);
 }
 .col-left {
   display: flex;
@@ -110,4 +132,37 @@ body {
   font-size: 2rem;
   font-weight: lighter;
   color: var(--color-secondary);
+}
+
+/* Col Left Middle Row */
+
+.col-left-middle-row {
+  background-color: #dffbf8;
+  color: var(--color-secondary);
+  display: flex;
+  gap: 7rem;
+  padding: 2rem 4rem;
+  margin-bottom: 3rem;
+}
+
+.col-left-middle-row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-left-middle-row > div > span:nth-child(1) {
+  font-size: 1.9rem;
+}
+
+.col-left-middle-row > div > span:nth-child(2) {
+  color: var(--color-primary);
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+/* Col Left Bottom Row */
+
+.col-left-text {
+  color: var(--color-tertiary);
+  max-width: 50rem;
 }
