@@ -53,6 +53,7 @@ body {
   box-shadow: 0 0 4px var(--color-primary);
   display: flex;
   height: 40rem;
+  transition: rotate 0.2s;
 }
 .col-left {
   display: flex;
@@ -153,7 +154,7 @@ body {
 }
 
 .col-left-middle-row > div > span:nth-child(1) {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .col-left-middle-row > div > span:nth-child(2) {
@@ -167,6 +168,19 @@ body {
 .col-left-text {
   color: var(--color-tertiary);
   max-width: 50rem;
+}
+
+/* Dashed Line */
+
+.dashed-line {
+  margin-left: 6rem;
+  align-self: center;
+  height: 100%;
+  width: 1px;
+}
+
+.dashed-line line {
+  stroke: var(--color-secondary);
 }
 
 /* Col Right */
@@ -185,4 +199,11 @@ body {
 
 .barcode {
   height: 16rem;
+}
+
+@media all and (max-width: 1000px) {
+  .card {
+    rotate: 90deg;
+    scale: 0.7;
+  }
 }
