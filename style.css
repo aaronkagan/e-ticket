@@ -31,9 +31,9 @@ body {
 .bold {
   font-weight: bold;
 }
+
 .card {
   background-color: #eefcfa;
-  padding: 3rem;
   box-shadow: 0 0 4px var(--color-primary);
   display: flex;
   height: 40rem;
@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem;
 }
 .col-left-top-row {
   display: flex;
@@ -157,9 +158,6 @@ body {
 /* Dashed Line */
 
 .dashed-line {
-  margin-left: 6rem;
-  align-self: center;
-  height: 100%;
   width: 1px;
 }
 
@@ -176,7 +174,9 @@ body {
   flex-direction: column;
   align-items: center;
   width: 30rem;
+  position: relative;
 }
+
 .col-right-middle-row {
   background-color: unset;
 }
