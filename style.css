@@ -1,0 +1,113 @@
+:root {
+  --color-primary: #00dad9;
+  --color-secondary: #7b8282;
+  --color-tertiary: #bdc2c2;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+.bold {
+  font-weight: bold;
+}
+.card {
+}
+.col-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.col-left-top-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.col-left-top-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.col-left-top-row > span:nth-of-type(1) {
+  position: relative;
+  font-size: 8rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.col-left-top-row > span:nth-of-type(1):after {
+  content: 'Budapest';
+  position: absolute;
+  bottom: -10%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-secondary);
+}
+
+.col-left .plane-line {
+  width: 10rem;
+  height: 1px;
+  background-color: var(--color-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-left .plane {
+  rotate: 90deg;
+  scale: 1.5;
+  fill: var(--color-tertiary);
+  animation-name: fly;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.col-left-top-row > span:nth-of-type(2) {
+  position: relative;
+  font-size: 8rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.col-left-top-row > span:nth-of-type(2):after {
+  content: 'Helsinki';
+  position: absolute;
+  bottom: -10%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-secondary);
+}
