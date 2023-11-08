@@ -51,6 +51,8 @@ body {
   background-color: #eefcfa;
   padding: 3rem;
   box-shadow: 0 0 4px var(--color-primary);
+  display: flex;
+  height: 40rem;
 }
 .col-left {
   display: flex;
@@ -87,7 +89,7 @@ body {
   color: var(--color-secondary);
 }
 
-.col-left .plane-line {
+.plane-line {
   width: 10rem;
   height: 1px;
   background-color: var(--color-tertiary);
@@ -96,7 +98,7 @@ body {
   justify-content: center;
 }
 
-.col-left .plane {
+.plane {
   rotate: 90deg;
   scale: 1.5;
   fill: var(--color-tertiary);
@@ -165,4 +167,22 @@ body {
 .col-left-text {
   color: var(--color-tertiary);
   max-width: 50rem;
+}
+
+/* Col Right */
+
+.col-right {
+  rotate: -90deg;
+  scale: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+}
+.col-right-middle-row {
+  background-color: unset;
+}
+
+.barcode {
+  height: 16rem;
 }
